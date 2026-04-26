@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarifs — FlowMetrics</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/pricing.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="navbar scrolled" id="navbar">
+  <div class="container">
+    <a href="../index.html" class="logo">
+      <span class="logo-icon">◈</span>
+      <span class="logo-text">FlowMetrics</span>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#features">Fonctionnalités</a>
+      <a href="../index.html#integrations">Intégrations</a>
+      <a href="pricing.html" style="color:var(--primary-light)">Tarifs</a>
+      <a href="login.html" class="nav-login">Connexion</a>
+      <a href="signup.html" class="btn btn-primary btn-sm">Essai gratuit</a>
+    </nav>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="pricing-page">
+
+  <!-- HERO -->
+  <section class="pricing-hero">
+    <div class="container">
+      <span class="section-tag">Tarifs</span>
+      <h1>Simple. Transparent. Rentable.</h1>
+      <p>Commencez gratuitement, payez au fur et à mesure de votre croissance. Pas de frais cachés, pas de surprises.</p>
+
+      <div class="billing-toggle">
+        <span class="toggle-label" id="monthly-label">Mensuel</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="billing-toggle" />
+          <span class="toggle-slider"></span>
+        </label>
+        <span class="toggle-label" id="annual-label">
+          Annuel
+          <span class="toggle-save">-20%</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANS -->
+  <section class="plans-section">
+    <div class="container">
+      <div class="plans-grid">
+
+        <!-- STARTER -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <div class="plan-icon" style="background: rgba(100,116,139,0.15); color: #94a3b8;">◇</div>
+            <h2 class="plan-name">Starter</h2>
+            <p class="plan-tagline">Pour explorer et démarrer sans risque</p>
+          </div>
+          <div class="plan-pricing">
+            <div class="plan-price-main">
+              <span class="currency">€</span>
+              <span class="amount" data-monthly="0" data-annual="0">0</span>
+              <span class="period">/mois</span>
+            </div>
+            <p class="plan-billing-note">Gratuit pour toujours</p>
+          </div>
+          <a href="signup.html" class="btn btn-outline btn-block">Démarrer gratuitement</a>
+          <div class="plan-features-list">
+            <div class="feature-group-label">Inclus</div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              3 intégrations natives
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              5 dashboards
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Historique 30 jours
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              1 utilisateur
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Rapports basiques
+            </div>
+            <div class="plan-feature excluded">
+              <span class="feature-x">✗</span>
+              Insights IA
+            </div>
+            <div class="plan-feature excluded">
+              <span class="feature-x">✗</span>
+              Alertes intelligentes
+            </div>
+            <div class="plan-feature excluded">
+              <span class="feature-x">✗</span>
+              Collaboration équipe
+            </div>
+          </div>
+        </div>
+
+        <!-- GROWTH -->
+        <div class="plan-card plan-card-popular">
+          <div class="popular-badge">⭐ Plus populaire</div>
+          <div class="plan-header">
+            <div class="plan-icon" style="background: rgba(99,102,241,0.15); color: var(--primary-light);">◈</div>
+            <h2 class="plan-name">Growth</h2>
+            <p class="plan-tagline">Pour les équipes qui veulent croître vite</p>
+          </div>
+          <div class="plan-pricing">
+            <div class="plan-price-main">
+              <span class="currency">€</span>
+              <span class="amount" data-monthly="79" data-annual="63">79</span>
+              <span class="period">/mois</span>
+            </div>
+            <p class="plan-billing-note" id="growth-billing-note">Facturé mensuellement</p>
+          </div>
+          <a href="signup.html" class="btn btn-primary btn-block">Essai gratuit 14 jours →</a>
+          <div class="plan-features-list">
+            <div class="feature-group-label">Tout de Starter, plus :</div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              20 intégrations
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Dashboards illimités
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Historique 2 ans
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              10 utilisateurs
+            </div>
+            <div class="plan-feature included feature-highlight">
+              <span class="feature-check">✓</span>
+              <strong>Insights IA automatiques</strong>
+            </div>
+            <div class="plan-feature included feature-highlight">
+              <span class="feature-check">✓</span>
+              <strong>Alertes intelligentes</strong>
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Rapports automatiques (PDF)
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Collaboration équipe
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Partage de dashboards
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Support email prioritaire
+            </div>
+          </div>
+        </div>
+
+        <!-- SCALE -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <div class="plan-icon" style="background: rgba(245,158,11,0.12); color: #f59e0b;">◉</div>
+            <h2 class="plan-name">Scale</h2>
+            <p class="plan-tagline">Pour les scale-ups et ETI ambitieuses</p>
+          </div>
+          <div class="plan-pricing">
+            <div class="plan-price-main">
+              <span class="currency">€</span>
+              <span class="amount" data-monthly="249" data-annual="199">249</span>
+              <span class="period">/mois</span>
+            </div>
+            <p class="plan-billing-note" id="scale-billing-note">Facturé mensuellement</p>
+          </div>
+          <a href="signup.html" class="btn btn-outline btn-block">Contacter les ventes →</a>
+          <div class="plan-features-list">
+            <div class="feature-group-label">Tout de Growth, plus :</div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              90+ intégrations
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Utilisateurs illimités
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Historique illimité
+            </div>
+            <div class="plan-feature included feature-highlight">
+              <span class="feature-check">✓</span>
+              <strong>SSO & SAML</strong>
+            </div>
+            <div class="plan-feature included feature-highlight">
+              <span class="feature-check">✓</span>
+              <strong>SLA 99.9% garanti</strong>
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Rôles & permissions avancés
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Onboarding dédié (8h)
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Support Slack dédié
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Audit logs
+            </div>
+            <div class="plan-feature included">
+              <span class="feature-check">✓</span>
+              Métriques custom avancées
+            </div>
+          </div>
+        </div>
+
+        <!-- ENTERPRISE -->
+        <div class="plan-card plan-card-enterprise">
+          <div class="plan-header">
+            <div class="plan-icon" style="background: rgba(99,102,241,0.1);">◬</div>
+            <h2 class="plan-name">Enterprise</h2>
+            <p class="plan-tagline">Contrat sur mesure pour les grands groupes</p>
+          </div>
+          <div class="plan-pricing">
+            <div class="plan-price-custom">Sur devis</div>
+            <p class="plan-billing-note">Contrat annuel personnalisé</p>
+          </div>
+          <a href="mailto:sales@flowmetrics.io" class="btn btn-ghost btn-block">Parler à un expert →</a>
+          <div class="enterprise-features">
+            <div class="ent-feature">✓ Déploiement on-premise disponible</div>
+            <div class="ent-feature">✓ SLA personnalisé (99.99%)</div>
+            <div class="ent-feature">✓ Customer Success Manager dédié</div>
+            <div class="ent-feature">✓ Formations équipe incluses</div>
+            <div class="ent-feature">✓ Contrat et facturation sur mesure</div>
+            <div class="ent-feature">✓ Conformité DPA / NDA</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Comparaison détaillée</h2>
+        <p>Toutes les fonctionnalités, plan par plan.</p>
+      </div>
+      <div class="comparison-table">
+        <div class="comp-header">
+          <div class="comp-feature-col">Fonctionnalité</div>
+          <div class="comp-plan-col">Starter</div>
+          <div class="comp-plan-col comp-popular">Growth</div>
+          <div class="comp-plan-col">Scale</div>
+          <div class="comp-plan-col">Enterprise</div>
+        </div>
+        <div class="comp-section-label">Données & Intégrations</div>
+        <div class="comp-row">
+          <div class="comp-feature-col">Intégrations natives</div>
+          <div class="comp-plan-col">3</div>
+          <div class="comp-plan-col comp-popular">20</div>
+          <div class="comp-plan-col">90+</div>
+          <div class="comp-plan-col">Illimitées</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feature-col">Historique des données</div>
+          <div class="comp-plan-col">30 jours</div>
+          <div class="comp-plan-col comp-popular">2 ans</div>
+          <div class="comp-plan-col">Illimité</div>
+          <div class="comp-plan-col">Illimité</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feature-col">Rafraîchissement des données</div>
+          <div class="comp-plan-col">1h</div>
+          <div class="comp-plan-col comp-popular">15 min</div>
+          <div class="comp-plan-col">Temps réel</div>
+          <div class="comp-plan-col">Temps réel</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feature-col">API REST accès</div>
+          <div class="comp-plan-col">✗</div>
+          <div class="comp-plan-col comp-popular">✓</div>
+          <div class="comp-plan-col">✓</div>
+          <div class="comp-plan-col">✓</div>
+        </div>
+        <div class="comp-section-label">Dashboards & Rapports</div>
+        <div class="comp-row">
+          <div class="comp-feature-col">Dashboards</div>
+          <div class="comp-plan-col">5</div>
+          <div class="comp-plan-col comp-popular">Illimités</div>
+          <div class="comp-plan-col">Illimités</div>
+          <div class="comp-plan-col">Illimités</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feature-col">Rapports PDF automatiques</div>
+          <div class="comp-plan-col">✗</div>
+          <div class="comp-plan-col comp-popular">✓</div>
+          <div class="comp-plan-col">✓</div>
+          <div class="comp-plan-col">✓</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feature-col">Partage de dashboards</div>
+          <div class="comp-plan-col">✗</div>
+          <div class="comp-plan-col comp-popular">✓</div>
+          <div class="comp-plan-col">✓</div>
+          <div class="comp-plan-col">✓</div>
+        </div>
+        <div class="comp-section-label">Intelligence Artificielle</div>
+        <div class="comp-row">
+          <div class="comp-feature-col">Insights IA</div>
+          <div class="comp-plan-col">✗</div>
+          <div class="comp-plan-col comp-popular">✓</div>
+          <div class="comp-plan-col">✓</div>
+          <div class="comp-plan-col">✓</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feature-col">Alertes anomalies IA</div>
+          <div class="comp-plan-col">✗</div>
+          <div class="comp-plan-col comp-popular">✓</div>
+          <div class="comp-plan-col">✓</div>
+          <div class="comp-plan-col">✓</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feature-col">Prévisions & scénarios</div>
+          <div class="comp-plan-col">✗</div>
+          <div class="comp-plan-col comp-popular">✗</div>
+          <div class="comp-plan-col">✓</div>
+          <div class="comp-plan-col">✓</div>
+        </div>
+        <div class="comp-section-label">Équipe & Sécurité</div>
+        <div class="comp-row">
+          <div class="comp-feature-col">Utilisateurs</div>
+          <div class="comp-plan-col">1</div>
+          <div class="comp-plan-col comp-popular">10</div>
+          <div class="comp-plan-col">Illimités</div>
+          <div class="comp-plan-col">Illimités</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feature-col">SSO / SAML</div>
+          <div class="comp-plan-col">✗</div>
+          <div class="comp-plan-col comp-popular">✗</div>
+          <div class="comp-plan-col">✓</div>
+          <div class="comp-plan-col">✓</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feature-col">SLA garanti</div>
+          <div class="comp-plan-col">—</div>
+          <div class="comp-plan-col comp-popular">—</div>
+          <div class="comp-plan-col">99.9%</div>
+          <div class="comp-plan-col">99.99%</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feature-col">Audit logs</div>
+          <div class="comp-plan-col">✗</div>
+          <div class="comp-plan-col comp-popular">✗</div>
+          <div class="comp-plan-col">✓</div>
+          <div class="comp-plan-col">✓</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Questions fréquentes</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Est-ce que je peux changer de plan à tout moment ?</h3>
+          <p>Oui. Vous pouvez upgrader ou downgrader à tout moment. Un upgrade prend effet immédiatement avec un prorata. Un downgrade prend effet à la fin de la période en cours.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Qu'arrive-t-il à mes données si je résilie ?</h3>
+          <p>Vos données sont conservées 90 jours après résiliation. Vous pouvez exporter l'intégralité de vos données en CSV/JSON à tout moment depuis votre compte.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Où sont hébergées mes données ?</h3>
+          <p>Toutes les données sont hébergées dans des datacenters certifiés ISO 27001 en Europe (AWS eu-west-1). Nous ne transférons aucune donnée hors UE.</p>
+        </div>
+        <div class="faq-item">
+          <h3>L'essai gratuit nécessite-t-il une carte bancaire ?</h3>
+          <p>Non. L'essai de 14 jours ne requiert aucune carte bancaire. Vous serez invité à choisir un plan uniquement à la fin de la période d'essai.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Proposez-vous des réductions pour les startups ?</h3>
+          <p>Oui. Les startups de moins de 2 ans et les associations peuvent bénéficier de 50% de réduction sur le plan Growth. Contactez-nous avec votre justificatif.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Quel support est inclus ?</h3>
+          <p>Starter : documentation. Growth : email sous 24h ouvré. Scale : Slack dédié + onboarding. Enterprise : CSM dédié + SLA support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-glow"></div>
+        <h2>Prêt à prendre de meilleures décisions ?</h2>
+        <p>14 jours d'essai gratuit · Aucune carte bancaire · Setup en 10 minutes</p>
+        <div class="cta-buttons">
+          <a href="signup.html" class="btn btn-white btn-lg">Démarrer gratuitement →</a>
+          <a href="dashboard.html" class="btn btn-ghost-white btn-lg">Voir la démo live</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0">
+      <p>© 2026 FlowMetrics SAS · <a href="../index.html" style="color:var(--primary-light)">Accueil</a></p>
+      <div class="footer-badges">
+        <span class="trust-badge">🔒 SSL</span>
+        <span class="trust-badge">✓ RGPD</span>
+        <span class="trust-badge">★ 4.8/5 G2</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script>
+  const toggle = document.getElementById('billing-toggle');
+  const amounts = document.querySelectorAll('.amount');
+  const growthNote = document.getElementById('growth-billing-note');
+  const scaleNote = document.getElementById('scale-billing-note');
+
+  toggle.addEventListener('change', () => {
+    const isAnnual = toggle.checked;
+    amounts.forEach(el => {
+      el.textContent = isAnnual ? el.dataset.annual : el.dataset.monthly;
+    });
+    if (growthNote) growthNote.textContent = isAnnual ? 'Facturé annuellement (€756/an)' : 'Facturé mensuellement';
+    if (scaleNote) scaleNote.textContent = isAnnual ? 'Facturé annuellement (€2 388/an)' : 'Facturé mensuellement';
+  });
+</script>
+</body>
+</html>

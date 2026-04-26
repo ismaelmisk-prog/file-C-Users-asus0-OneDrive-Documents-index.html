@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowMetrics — Analytics IA pour les équipes ambitieuses</title>
+  <meta name="description" content="FlowMetrics centralise vos données business, génère des rapports IA en un clic et prédit vos tendances. Essai gratuit 14 jours." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/landing.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <a href="/" class="logo">
+      <span class="logo-icon">◈</span>
+      <span class="logo-text">FlowMetrics</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Fonctionnalités</a>
+      <a href="#integrations">Intégrations</a>
+      <a href="pages/pricing.html">Tarifs</a>
+      <a href="#testimonials">Avis</a>
+      <a href="pages/login.html" class="nav-login">Connexion</a>
+      <a href="pages/signup.html" class="btn btn-primary btn-sm">Essai gratuit</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+  </div>
+  <div class="container">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Nouveau — Rapports IA en temps réel disponibles
+    </div>
+    <h1 class="hero-title">
+      Transformez vos données<br />
+      en <span class="gradient-text">décisions qui rapportent</span>
+    </h1>
+    <p class="hero-subtitle">
+      FlowMetrics agrège toutes vos métriques business, génère des insights IA automatiques
+      et vous alerte avant que vos KPIs ne décrochent. Pas de data scientist requis.
+    </p>
+    <div class="hero-cta">
+      <a href="pages/signup.html" class="btn btn-primary btn-lg">
+        Commencer gratuitement
+        <span class="btn-arrow">→</span>
+      </a>
+      <a href="pages/dashboard.html" class="btn btn-ghost btn-lg">
+        <span class="play-icon">▶</span>
+        Voir la démo live
+      </a>
+    </div>
+    <p class="hero-note">✓ Aucune carte bancaire &nbsp; ✓ 14 jours d'essai &nbsp; ✓ Annulation à tout moment</p>
+
+    <!-- DASHBOARD PREVIEW -->
+    <div class="hero-preview">
+      <div class="preview-bar">
+        <span class="preview-dot red"></span>
+        <span class="preview-dot yellow"></span>
+        <span class="preview-dot green"></span>
+        <span class="preview-url">app.flowmetrics.io/dashboard</span>
+      </div>
+      <div class="preview-dashboard">
+        <div class="preview-sidebar">
+          <div class="sidebar-logo">◈ FM</div>
+          <div class="sidebar-item active">
+            <span>▦</span> Dashboard
+          </div>
+          <div class="sidebar-item"><span>◎</span> Analytics</div>
+          <div class="sidebar-item"><span>⊞</span> Rapports</div>
+          <div class="sidebar-item"><span>◈</span> Insights IA</div>
+          <div class="sidebar-item"><span>⊟</span> Équipe</div>
+          <div class="sidebar-item"><span>◉</span> Intégrations</div>
+        </div>
+        <div class="preview-content">
+          <div class="preview-header">
+            <div>
+              <h3>Bonjour, Sophie 👋</h3>
+              <p>Mercredi 26 Avril 2026</p>
+            </div>
+            <div class="preview-actions">
+              <button class="preview-btn">+ Nouveau rapport</button>
+            </div>
+          </div>
+          <div class="preview-kpis">
+            <div class="kpi-card kpi-green">
+              <div class="kpi-label">Revenus MRR</div>
+              <div class="kpi-value">€ 84 320</div>
+              <div class="kpi-change">↑ +12.4%</div>
+            </div>
+            <div class="kpi-card kpi-blue">
+              <div class="kpi-label">Clients actifs</div>
+              <div class="kpi-value">1 247</div>
+              <div class="kpi-change">↑ +8.1%</div>
+            </div>
+            <div class="kpi-card kpi-purple">
+              <div class="kpi-label">Churn rate</div>
+              <div class="kpi-value">1.8 %</div>
+              <div class="kpi-change">↓ -0.3%</div>
+            </div>
+            <div class="kpi-card kpi-orange">
+              <div class="kpi-label">NPS Score</div>
+              <div class="kpi-value">72</div>
+              <div class="kpi-change">↑ +5 pts</div>
+            </div>
+          </div>
+          <div class="preview-charts">
+            <div class="chart-card">
+              <div class="chart-title">Revenus — 12 derniers mois</div>
+              <div class="chart-bars">
+                <div class="bar" style="height:45%"><span>Mai</span></div>
+                <div class="bar" style="height:52%"><span>Jun</span></div>
+                <div class="bar" style="height:48%"><span>Jul</span></div>
+                <div class="bar" style="height:61%"><span>Aoû</span></div>
+                <div class="bar" style="height:57%"><span>Sep</span></div>
+                <div class="bar" style="height:68%"><span>Oct</span></div>
+                <div class="bar" style="height:72%"><span>Nov</span></div>
+                <div class="bar" style="height:69%"><span>Déc</span></div>
+                <div class="bar" style="height:78%"><span>Jan</span></div>
+                <div class="bar" style="height:82%"><span>Fév</span></div>
+                <div class="bar" style="height:88%"><span>Mar</span></div>
+                <div class="bar active" style="height:95%"><span>Avr</span></div>
+              </div>
+            </div>
+            <div class="ai-card">
+              <div class="ai-header">
+                <span class="ai-icon">✦</span>
+                Insight IA
+              </div>
+              <p class="ai-text">Vos revenus du segment "Entreprise" ont augmenté de 23% ce trimestre. L'expansion dans ce segment pourrait générer +€18K MRR supplémentaires d'ici 90 jours.</p>
+              <button class="ai-action">Voir le plan d'action →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="social-proof">
+  <div class="container">
+    <p class="social-label">Ils font confiance à FlowMetrics</p>
+    <div class="logos-row">
+      <div class="brand-logo">Shopify</div>
+      <div class="brand-logo">Doctolib</div>
+      <div class="brand-logo">BlaBlaCar</div>
+      <div class="brand-logo">Qonto</div>
+      <div class="brand-logo">Swile</div>
+      <div class="brand-logo">Alan</div>
+      <div class="brand-logo">Contentsquare</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">12 000+</div>
+        <div class="stat-label">Entreprises actives</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">€ 2.4Md</div>
+        <div class="stat-label">Revenus analysés</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">99.9%</div>
+        <div class="stat-label">Disponibilité SLA</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">4.8 / 5</div>
+        <div class="stat-label">Note G2 & Capterra</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Fonctionnalités</span>
+      <h2>Tout ce dont votre équipe a besoin.<br />Rien de superflu.</h2>
+      <p>FlowMetrics a été conçu par des opérateurs, pour des opérateurs. Chaque fonctionnalité existe parce qu'elle génère un retour mesurable.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card feature-large">
+        <div class="feature-icon">◈</div>
+        <h3>Dashboards unifiés temps réel</h3>
+        <p>Connectez toutes vos sources de données en 5 minutes. Salesforce, Stripe, Google Analytics, HubSpot, PostgreSQL — tout dans un seul endroit, mis à jour en continu.</p>
+        <div class="feature-visual">
+          <div class="mini-dashboard">
+            <div class="mini-metric"><span>MRR</span><strong>€84K</strong><em>+12%</em></div>
+            <div class="mini-metric"><span>CAC</span><strong>€180</strong><em>-8%</em></div>
+            <div class="mini-metric"><span>LTV</span><strong>€2.4K</strong><em>+21%</em></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">✦</div>
+        <h3>Insights IA automatiques</h3>
+        <p>Notre moteur IA analyse vos tendances 24h/24 et vous envoie des recommandations actionnables avant que vos équipes ne les détectent.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Alertes intelligentes</h3>
+        <p>Définissez des seuils, notre IA apprend votre saisonnalité et ne vous alerte que sur les vraies anomalies — pas du bruit.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⊞</div>
+        <h3>Rapports one-click</h3>
+        <p>Générez un rapport PDF de direction en un clic. Partagez un lien sécurisé à vos investisseurs sans export manuel.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">◎</div>
+        <h3>Prévisions & scénarios</h3>
+        <p>Modélisez 3 scénarios de croissance simultanément. Voyez l'impact d'un changement tarifaire sur votre runway en temps réel.</p>
+      </div>
+
+      <div class="feature-card feature-large">
+        <div class="feature-icon">⊟</div>
+        <h3>Collaboration équipe intégrée</h3>
+        <p>Commentez une métrique, assignez une investigation à un collègue, et suivez les actions correctives directement dans FlowMetrics. Fini les allers-retours Slack/Notion.</p>
+        <div class="feature-visual">
+          <div class="collab-preview">
+            <div class="collab-comment">
+              <div class="collab-avatar" style="background:#6366f1">S</div>
+              <div class="collab-bubble">Le churn a piqué le 15. @Marc peux-tu investiguer ?</div>
+            </div>
+            <div class="collab-comment">
+              <div class="collab-avatar" style="background:#10b981">M</div>
+              <div class="collab-bubble">Identifié — problème d'onboarding sur le plan Pro. Fix prévu vendredi.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Comment ça marche</span>
+      <h2>Opérationnel en 10 minutes chrono</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3>Connectez vos outils</h3>
+          <p>90+ intégrations natives. OAuth en un clic. Pas de code, pas de CSV.</p>
+        </div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3>Configurez vos KPIs</h3>
+          <p>Choisissez parmi nos modèles SaaS/E-commerce/Retail ou créez vos métriques custom.</p>
+        </div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3>L'IA prend le relais</h3>
+          <p>Recevez vos premiers insights dans les 24h. Partagez avec votre équipe en un lien.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTEGRATIONS -->
+<section class="integrations" id="integrations">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Intégrations</span>
+      <h2>S'intègre à tout votre stack</h2>
+      <p>90+ connecteurs natifs. Une API REST pour le reste.</p>
+    </div>
+    <div class="integrations-grid">
+      <div class="integration-badge">Stripe</div>
+      <div class="integration-badge">Salesforce</div>
+      <div class="integration-badge">HubSpot</div>
+      <div class="integration-badge">Google Analytics</div>
+      <div class="integration-badge">PostgreSQL</div>
+      <div class="integration-badge">Shopify</div>
+      <div class="integration-badge">Intercom</div>
+      <div class="integration-badge">Mixpanel</div>
+      <div class="integration-badge">Zendesk</div>
+      <div class="integration-badge">Slack</div>
+      <div class="integration-badge">Notion</div>
+      <div class="integration-badge">Jira</div>
+      <div class="integration-badge">QuickBooks</div>
+      <div class="integration-badge">Segment</div>
+      <div class="integration-badge">BigQuery</div>
+      <div class="integration-badge">+ 75 autres</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Témoignages</span>
+      <h2>Des équipes qui passent à l'action</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card testimonial-featured">
+        <div class="quote-mark">"</div>
+        <p>FlowMetrics nous a fait économiser 3 jours de reporting par mois. Notre investisseur reçoit maintenant son rapport automatiquement chaque lundi. L'IA a détecté un problème de churn qu'on aurait mis 2 semaines à identifier.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">CL</div>
+          <div>
+            <strong>Claire Laurent</strong>
+            <span>CEO, Moodly (SaaS RH, €1.2M ARR)</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p>On a remplacé 4 outils différents par FlowMetrics. Notre équipe data a enfin le temps de faire de l'analyse à valeur ajoutée plutôt que de préparer des slides.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">TR</div>
+          <div>
+            <strong>Thomas Renard</strong>
+            <span>Head of Growth, Kantify</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p>Le meilleur investissement qu'on ait fait cette année. ROI positif en moins de 30 jours grâce aux alertes qui ont stoppé une fuite de clients à temps.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AM</div>
+          <div>
+            <strong>Amina Moussa</strong>
+            <span>CFO, Spendesk (ex-membre équipe)</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p>Setup en 20 minutes, premier insight utile en 2 heures. C'est exactement ce qu'une startup Series A dont l'équipe est à flux tendu a besoin.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">PD</div>
+          <div>
+            <strong>Pierre Dumont</strong>
+            <span>CTO, Brigad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING TEASER -->
+<section class="pricing-teaser">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Tarifs</span>
+      <h2>Un prix honnête, un ROI mesurable</h2>
+      <p>Commencez gratuitement. Upgradez quand vous en avez besoin. Pas de mauvaise surprise.</p>
+    </div>
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price">€ 0 <span>/mois</span></div>
+        <div class="plan-desc">Pour tester et démarrer</div>
+        <ul class="plan-features">
+          <li>✓ 3 intégrations</li>
+          <li>✓ 5 dashboards</li>
+          <li>✓ Données 30 jours</li>
+          <li>✓ 1 utilisateur</li>
+        </ul>
+        <a href="pages/signup.html" class="btn btn-outline btn-block">Démarrer gratuitement</a>
+      </div>
+      <div class="pricing-card pricing-popular">
+        <div class="plan-badge">Le plus populaire</div>
+        <div class="plan-name">Growth</div>
+        <div class="plan-price">€ 79 <span>/mois</span></div>
+        <div class="plan-desc">Pour les équipes en croissance</div>
+        <ul class="plan-features">
+          <li>✓ 20 intégrations</li>
+          <li>✓ Dashboards illimités</li>
+          <li>✓ Historique 2 ans</li>
+          <li>✓ 10 utilisateurs</li>
+          <li>✓ Insights IA</li>
+          <li>✓ Alertes intelligentes</li>
+          <li>✓ Rapports automatiques</li>
+        </ul>
+        <a href="pages/signup.html" class="btn btn-primary btn-block">Essayer 14 jours gratuit</a>
+      </div>
+      <div class="pricing-card">
+        <div class="plan-name">Scale</div>
+        <div class="plan-price">€ 249 <span>/mois</span></div>
+        <div class="plan-desc">Pour les scale-ups & ETI</div>
+        <ul class="plan-features">
+          <li>✓ Tout de Growth</li>
+          <li>✓ 90+ intégrations</li>
+          <li>✓ Utilisateurs illimités</li>
+          <li>✓ SSO & SAML</li>
+          <li>✓ SLA 99.9%</li>
+          <li>✓ Support prioritaire</li>
+          <li>✓ Onboarding dédié</li>
+        </ul>
+        <a href="pages/signup.html" class="btn btn-outline btn-block">Contacter les ventes</a>
+      </div>
+    </div>
+    <p class="pricing-note">Tous les plans incluent le chiffrement AES-256, RGPD, hébergement EU. <a href="pages/pricing.html">Voir la comparaison complète →</a></p>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final-cta">
+  <div class="container">
+    <div class="cta-card">
+      <div class="cta-glow"></div>
+      <h2>Prêt à piloter votre business avec précision ?</h2>
+      <p>Rejoignez 12 000+ entreprises qui prennent de meilleures décisions grâce à FlowMetrics.</p>
+      <div class="cta-buttons">
+        <a href="pages/signup.html" class="btn btn-white btn-lg">Commencer gratuitement →</a>
+        <a href="pages/dashboard.html" class="btn btn-ghost-white btn-lg">Voir la démo</a>
+      </div>
+      <p class="cta-note">Aucune carte bancaire requise · Setup en 10 minutes · Résiliable à tout moment</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">FlowMetrics</span>
+        </a>
+        <p>La plateforme analytics qui transforme vos données en décisions.</p>
+        <div class="footer-social">
+          <a href="#">𝕏</a>
+          <a href="#">in</a>
+          <a href="#">gh</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Produit</h4>
+        <a href="#features">Fonctionnalités</a>
+        <a href="#integrations">Intégrations</a>
+        <a href="pages/pricing.html">Tarifs</a>
+        <a href="pages/dashboard.html">Démo</a>
+        <a href="#">Changelog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <a href="#">À propos</a>
+        <a href="#">Blog</a>
+        <a href="#">Carrières</a>
+        <a href="#">Presse</a>
+        <a href="#">Partenaires</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#">Documentation</a>
+        <a href="#">Statut</a>
+        <a href="#">Contact</a>
+        <a href="#">Communauté</a>
+      </div>
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <a href="#">CGU</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">RGPD</a>
+        <a href="#">Cookies</a>
+        <a href="#">Mentions légales</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FlowMetrics SAS — Tous droits réservés · Hébergement EU · RGPD compliant</p>
+      <div class="footer-badges">
+        <span class="trust-badge">🔒 SSL</span>
+        <span class="trust-badge">✓ RGPD</span>
+        <span class="trust-badge">★ 4.8/5 G2</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

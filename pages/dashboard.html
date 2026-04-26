@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — FlowMetrics</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body class="app-body">
+
+<!-- APP LAYOUT -->
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="app-sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">FlowMetrics</span>
+      </a>
+    </div>
+
+    <div class="workspace-switcher">
+      <div class="workspace-info">
+        <div class="workspace-avatar">M</div>
+        <div>
+          <strong>Moodly SAS</strong>
+          <span>Plan Growth</span>
+        </div>
+      </div>
+      <span class="chevron">⌄</span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section-label">Principal</div>
+      <a href="#" class="nav-item active">
+        <span class="nav-icon">▦</span>
+        Dashboard
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">◎</span>
+        Analytics
+        <span class="nav-badge">Live</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">⊞</span>
+        Rapports
+        <span class="nav-count">3</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">✦</span>
+        Insights IA
+        <span class="nav-badge nav-badge-new">5 nouveau</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">⚡</span>
+        Alertes
+      </a>
+      <div class="nav-section-label">Données</div>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">◉</span>
+        Intégrations
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">⊠</span>
+        Sources
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">⊟</span>
+        Métriques custom
+      </a>
+      <div class="nav-section-label">Équipe</div>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">⊘</span>
+        Membres
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">◷</span>
+        Activité
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="usage-bar">
+        <div class="usage-label">
+          <span>Intégrations</span>
+          <span>12 / 20</span>
+        </div>
+        <div class="usage-track">
+          <div class="usage-fill" style="width:60%"></div>
+        </div>
+      </div>
+      <div class="sidebar-user">
+        <div class="user-avatar">SL</div>
+        <div class="user-info">
+          <strong>Sophie Laurent</strong>
+          <span>Admin</span>
+        </div>
+        <button class="user-settings">⚙</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="app-main">
+
+    <!-- TOP BAR -->
+    <header class="app-topbar">
+      <div class="topbar-left">
+        <button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+        <div class="breadcrumb">Dashboard</div>
+      </div>
+      <div class="topbar-center">
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input type="text" placeholder="Rechercher une métrique, un rapport..." />
+          <span class="search-hint">⌘K</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <div class="date-range-picker">
+          <span>📅</span>
+          Jan 1 — Avr 26, 2026
+          <span class="chevron">⌄</span>
+        </div>
+        <button class="icon-btn" title="Notifications">
+          🔔
+          <span class="notif-dot"></span>
+        </button>
+        <button class="btn btn-primary btn-sm">+ Nouveau rapport</button>
+      </div>
+    </header>
+
+    <!-- DASHBOARD BODY -->
+    <div class="dashboard-body">
+
+      <!-- PAGE HEADER -->
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Bonjour, Sophie 👋</h1>
+          <p class="page-subtitle">Voici un aperçu de votre business — mis à jour il y a 2 minutes</p>
+        </div>
+        <div class="page-actions">
+          <button class="btn btn-ghost btn-sm">↗ Partager</button>
+          <button class="btn btn-ghost btn-sm">⟳ Actualiser</button>
+        </div>
+      </div>
+
+      <!-- AI ALERT -->
+      <div class="ai-alert">
+        <div class="ai-alert-icon">✦</div>
+        <div class="ai-alert-content">
+          <strong>Insight IA — Opportunité détectée</strong>
+          <p>Le segment "Entreprise" croît 3x plus vite que votre base totale. Augmenter le budget acquisition sur ce segment pourrait générer +€18K MRR d'ici 90 jours avec un CAC estimé à €220.</p>
+        </div>
+        <div class="ai-alert-actions">
+          <button class="btn btn-primary btn-sm">Voir le plan →</button>
+          <button class="btn btn-ghost btn-sm">Ignorer</button>
+        </div>
+      </div>
+
+      <!-- KPI GRID -->
+      <div class="kpi-grid">
+        <div class="kpi-tile kpi-tile-featured">
+          <div class="kpi-tile-header">
+            <span class="kpi-tile-label">MRR (Monthly Recurring Revenue)</span>
+            <span class="kpi-trend-up">↑ +12.4%</span>
+          </div>
+          <div class="kpi-tile-value">€ 84 320</div>
+          <div class="kpi-tile-sub">vs. €75 012 le mois dernier</div>
+          <div class="kpi-sparkline">
+            <svg viewBox="0 0 120 40" preserveAspectRatio="none">
+              <polyline points="0,35 10,30 20,32 30,25 40,20 50,22 60,15 70,18 80,10 90,8 100,5 110,3 120,2"
+                fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="0,40 0,35 10,30 20,32 30,25 40,20 50,22 60,15 70,18 80,10 90,8 100,5 110,3 120,2 120,40"
+                fill="rgba(99,102,241,0.12)" stroke="none"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="kpi-tile">
+          <div class="kpi-tile-header">
+            <span class="kpi-tile-label">ARR</span>
+            <span class="kpi-trend-up">↑ +12.4%</span>
+          </div>
+          <div class="kpi-tile-value">€ 1.01M</div>
+          <div class="kpi-tile-sub">Objectif: €1.2M</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width:84%"></div>
+          </div>
+          <div class="progress-label">84% atteint</div>
+        </div>
+
+        <div class="kpi-tile">
+          <div class="kpi-tile-header">
+            <span class="kpi-tile-label">Clients actifs</span>
+            <span class="kpi-trend-up">↑ +8.1%</span>
+          </div>
+          <div class="kpi-tile-value">1 247</div>
+          <div class="kpi-tile-sub">+94 ce mois</div>
+        </div>
+
+        <div class="kpi-tile">
+          <div class="kpi-tile-header">
+            <span class="kpi-tile-label">Churn Rate</span>
+            <span class="kpi-trend-down">↓ -0.3%</span>
+          </div>
+          <div class="kpi-tile-value">1.8 %</div>
+          <div class="kpi-tile-sub">Objectif: &lt; 2%  ✓</div>
+        </div>
+
+        <div class="kpi-tile">
+          <div class="kpi-tile-header">
+            <span class="kpi-tile-label">CAC moyen</span>
+            <span class="kpi-trend-down">↓ -5.2%</span>
+          </div>
+          <div class="kpi-tile-value">€ 180</div>
+          <div class="kpi-tile-sub">LTV/CAC ratio: 13.3x</div>
+        </div>
+
+        <div class="kpi-tile">
+          <div class="kpi-tile-header">
+            <span class="kpi-tile-label">NPS Score</span>
+            <span class="kpi-trend-up">↑ +5 pts</span>
+          </div>
+          <div class="kpi-tile-value">72</div>
+          <div class="kpi-tile-sub">Excellent (>70)</div>
+        </div>
+      </div>
+
+      <!-- CHARTS ROW -->
+      <div class="charts-row">
+        <!-- REVENUE CHART -->
+        <div class="chart-widget chart-wide">
+          <div class="widget-header">
+            <div>
+              <h3>Revenus</h3>
+              <p>MRR & ARR sur 12 mois</p>
+            </div>
+            <div class="widget-controls">
+              <button class="tab-btn active">MRR</button>
+              <button class="tab-btn">ARR</button>
+              <button class="tab-btn">Net Revenue</button>
+            </div>
+          </div>
+          <div class="chart-area">
+            <div class="chart-y-labels">
+              <span>€90K</span>
+              <span>€70K</span>
+              <span>€50K</span>
+              <span>€30K</span>
+              <span>€0</span>
+            </div>
+            <div class="chart-plot">
+              <svg viewBox="0 0 800 200" preserveAspectRatio="none" class="revenue-chart">
+                <defs>
+                  <linearGradient id="revGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#6366f1" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#6366f1" stop-opacity="0.02"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,180 L66,165 L133,170 L200,150 L266,140 L333,130 L400,120 L466,125 L533,100 L600,85 L666,70 L733,50 L800,30"
+                  fill="none" stroke="#6366f1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M0,200 L0,180 L66,165 L133,170 L200,150 L266,140 L333,130 L400,120 L466,125 L533,100 L600,85 L666,70 L733,50 L800,30 L800,200 Z"
+                  fill="url(#revGrad)"/>
+                <circle cx="800" cy="30" r="5" fill="#6366f1"/>
+              </svg>
+              <div class="chart-x-labels">
+                <span>Mai</span><span>Jun</span><span>Jul</span><span>Aoû</span>
+                <span>Sep</span><span>Oct</span><span>Nov</span><span>Déc</span>
+                <span>Jan</span><span>Fév</span><span>Mar</span><span>Avr</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEGMENT PIE -->
+        <div class="chart-widget">
+          <div class="widget-header">
+            <div>
+              <h3>Revenus par segment</h3>
+              <p>Ce mois</p>
+            </div>
+          </div>
+          <div class="donut-chart">
+            <svg viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="48" fill="none" stroke="#1e1e2e" stroke-width="20"/>
+              <circle cx="60" cy="60" r="48" fill="none" stroke="#6366f1" stroke-width="20"
+                stroke-dasharray="150 152" stroke-dashoffset="0" stroke-linecap="round"/>
+              <circle cx="60" cy="60" r="48" fill="none" stroke="#10b981" stroke-width="20"
+                stroke-dasharray="80 222" stroke-dashoffset="-150" stroke-linecap="round"/>
+              <circle cx="60" cy="60" r="48" fill="none" stroke="#f59e0b" stroke-width="20"
+                stroke-dasharray="50 252" stroke-dashoffset="-230" stroke-linecap="round"/>
+              <text x="60" y="56" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="700">€84K</text>
+              <text x="60" y="70" text-anchor="middle" fill="#64748b" font-size="8">MRR Total</text>
+            </svg>
+          </div>
+          <div class="segment-legend">
+            <div class="legend-item">
+              <span class="legend-dot" style="background:#6366f1"></span>
+              <span>Entreprise</span>
+              <strong>€42K (50%)</strong>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot" style="background:#10b981"></span>
+              <span>Growth</span>
+              <strong>€28K (33%)</strong>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot" style="background:#f59e0b"></span>
+              <span>Starter</span>
+              <strong>€14K (17%)</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM ROW -->
+      <div class="bottom-row">
+        <!-- RECENT EVENTS -->
+        <div class="widget">
+          <div class="widget-header">
+            <div>
+              <h3>Événements récents</h3>
+              <p>Activité business en temps réel</p>
+            </div>
+            <button class="btn btn-ghost btn-sm">Tout voir →</button>
+          </div>
+          <div class="events-list">
+            <div class="event-item event-positive">
+              <div class="event-icon">↑</div>
+              <div class="event-content">
+                <strong>Nouveau client Entreprise</strong>
+                <span>Kantify SAS — Plan Scale €299/mois</span>
+              </div>
+              <div class="event-time">Il y a 12min</div>
+            </div>
+            <div class="event-item event-positive">
+              <div class="event-icon">⟳</div>
+              <div class="event-content">
+                <strong>Upgrade plan</strong>
+                <span>TechVision → Scale (+€170/mois)</span>
+              </div>
+              <div class="event-time">Il y a 1h</div>
+            </div>
+            <div class="event-item event-warning">
+              <div class="event-icon">⚠</div>
+              <div class="event-content">
+                <strong>Risque churn détecté</strong>
+                <span>DataPulse — 0 connexion depuis 14 jours</span>
+              </div>
+              <div class="event-time">Il y a 2h</div>
+            </div>
+            <div class="event-item event-positive">
+              <div class="event-icon">✓</div>
+              <div class="event-content">
+                <strong>Objectif MRR atteint</strong>
+                <span>€80K dépassé ce mois-ci</span>
+              </div>
+              <div class="event-time">Hier</div>
+            </div>
+            <div class="event-item event-negative">
+              <div class="event-icon">↓</div>
+              <div class="event-content">
+                <strong>Churn</strong>
+                <span>StartupHub — Annulation plan Growth</span>
+              </div>
+              <div class="event-time">Hier</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI INSIGHTS PANEL -->
+        <div class="widget">
+          <div class="widget-header">
+            <div>
+              <h3>✦ Insights IA</h3>
+              <p>Générés automatiquement</p>
+            </div>
+            <span class="badge-live">Live</span>
+          </div>
+          <div class="insights-list">
+            <div class="insight-card insight-opportunity">
+              <div class="insight-type">Opportunité</div>
+              <p>Les clients qui utilisent 3+ intégrations ont un LTV 2.4x supérieur. Recommandation : campagne d'activation intégration pour vos 340 clients en dessous du seuil.</p>
+              <button class="insight-action">Créer une campagne →</button>
+            </div>
+            <div class="insight-card insight-risk">
+              <div class="insight-type">Risque</div>
+              <p>7 comptes Growth n'ont pas eu de session active depuis 21+ jours. Probabilité de churn : 73%. Intervention recommandée dans les 7 jours.</p>
+              <button class="insight-action">Voir les comptes →</button>
+            </div>
+            <div class="insight-card insight-trend">
+              <div class="insight-type">Tendance</div>
+              <p>Le taux de conversion essai → payant a augmenté de 4.2% après le dernier changement d'onboarding. Impact projeté : +€6K MRR sur 3 mois.</p>
+              <button class="insight-action">Détails →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOP CLIENTS -->
+        <div class="widget">
+          <div class="widget-header">
+            <div>
+              <h3>Top clients</h3>
+              <p>Par MRR — ce mois</p>
+            </div>
+            <button class="btn btn-ghost btn-sm">Export →</button>
+          </div>
+          <div class="clients-table">
+            <div class="table-header">
+              <span>Entreprise</span>
+              <span>Plan</span>
+              <span>MRR</span>
+              <span>Santé</span>
+            </div>
+            <div class="table-row">
+              <span class="client-name"><div class="client-dot" style="background:#6366f1"></div>Kantify</span>
+              <span class="plan-chip plan-scale">Scale</span>
+              <span class="mrr">€299</span>
+              <span class="health health-good">98</span>
+            </div>
+            <div class="table-row">
+              <span class="client-name"><div class="client-dot" style="background:#10b981"></div>TechVision</span>
+              <span class="plan-chip plan-scale">Scale</span>
+              <span class="mrr">€299</span>
+              <span class="health health-good">91</span>
+            </div>
+            <div class="table-row">
+              <span class="client-name"><div class="client-dot" style="background:#f59e0b"></div>Mobistar</span>
+              <span class="plan-chip plan-growth">Growth</span>
+              <span class="mrr">€79</span>
+              <span class="health health-medium">74</span>
+            </div>
+            <div class="table-row">
+              <span class="client-name"><div class="client-dot" style="background:#ef4444"></div>DataPulse</span>
+              <span class="plan-chip plan-growth">Growth</span>
+              <span class="mrr">€79</span>
+              <span class="health health-bad">32</span>
+            </div>
+            <div class="table-row">
+              <span class="client-name"><div class="client-dot" style="background:#6366f1"></div>FluxLabs</span>
+              <span class="plan-chip plan-growth">Growth</span>
+              <span class="mrr">€79</span>
+              <span class="health health-good">88</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

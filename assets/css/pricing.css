@@ -1,0 +1,312 @@
+/* ============================================
+   FLOWMETRICS — PRICING PAGE STYLES
+   ============================================ */
+
+.pricing-page { padding-top: 80px; }
+
+.pricing-hero {
+  padding: 80px 0 60px;
+  text-align: center;
+  background: var(--dark-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.pricing-hero h1 {
+  margin: 16px 0 16px;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.pricing-hero p {
+  font-size: 18px;
+  max-width: 520px;
+  margin: 0 auto 36px;
+}
+
+/* BILLING TOGGLE */
+.billing-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.toggle-label {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-save {
+  background: linear-gradient(135deg, var(--accent), #34d399);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 100px;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.toggle-switch input { display: none; }
+
+.toggle-slider {
+  position: absolute;
+  inset: 0;
+  background: var(--dark-4);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+.toggle-slider::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background: var(--text-muted);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.toggle-switch input:checked + .toggle-slider::before {
+  transform: translateX(20px);
+  background: white;
+}
+
+/* PLANS */
+.plans-section { padding: 60px 0 80px; }
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.plan-card {
+  background: var(--dark-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.plan-card-popular {
+  background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(167,139,250,0.06));
+  border-color: rgba(99,102,241,0.4);
+  box-shadow: 0 20px 60px rgba(99,102,241,0.15);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--primary), #a78bfa);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 16px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.plan-card-enterprise {
+  border-style: dashed;
+}
+
+.plan-header { margin-bottom: 20px; }
+
+.plan-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.plan-card .plan-name {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.plan-tagline { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+.plan-pricing { margin-bottom: 20px; }
+
+.plan-price-main {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.currency { font-size: 18px; font-weight: 700; color: var(--text-primary); }
+.amount { font-size: 48px; font-weight: 900; color: var(--text-primary); letter-spacing: -0.04em; line-height: 1; }
+.period { font-size: 14px; color: var(--text-muted); }
+.plan-price-custom { font-size: 32px; font-weight: 800; color: var(--text-primary); margin-bottom: 4px; }
+.plan-billing-note { font-size: 12px; color: var(--text-muted); }
+
+.plan-features-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feature-group-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  padding-top: 4px;
+  margin-bottom: 4px;
+}
+
+.plan-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.plan-feature.included { color: var(--text-secondary); }
+.plan-feature.excluded { color: var(--text-muted); opacity: 0.6; }
+.plan-feature.feature-highlight { color: var(--text-primary); }
+
+.feature-check { color: var(--accent); font-weight: 700; flex-shrink: 0; }
+.feature-x { color: var(--text-muted); flex-shrink: 0; }
+
+.enterprise-features {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ent-feature {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* COMPARISON TABLE */
+.comparison-section {
+  padding: 80px 0;
+  background: var(--dark-2);
+}
+
+.comparison-table {
+  background: var(--dark-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.comp-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.2fr 1fr 1fr;
+  background: var(--dark-4);
+  border-bottom: 1px solid var(--border);
+  padding: 0;
+}
+
+.comp-header > div {
+  padding: 16px 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.comp-popular { background: rgba(99,102,241,0.08); color: var(--primary-light) !important; }
+
+.comp-section-label {
+  padding: 12px 20px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.02);
+  border-top: 1px solid var(--border);
+}
+
+.comp-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.2fr 1fr 1fr;
+  border-top: 1px solid var(--border);
+}
+
+.comp-row:hover { background: rgba(255,255,255,0.02); }
+
+.comp-row > div, .comp-feature-col {
+  padding: 14px 20px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+}
+
+.comp-feature-col { color: var(--text-primary); font-weight: 500; }
+
+.comp-row .comp-popular {
+  background: rgba(99,102,241,0.05);
+  color: var(--primary-light);
+  font-weight: 600;
+}
+
+/* FAQ */
+.faq-section { padding: 80px 0; }
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.faq-item {
+  background: var(--dark-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.faq-item h3 { font-size: 16px; margin-bottom: 12px; color: var(--text-primary); }
+.faq-item p { font-size: 14px; color: var(--text-secondary); line-height: 1.7; }
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .plans-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .plans-grid { grid-template-columns: 1fr; }
+  .comparison-table { overflow-x: auto; }
+  .comp-header, .comp-row { min-width: 600px; }
+  .faq-grid { grid-template-columns: 1fr; }
+}
