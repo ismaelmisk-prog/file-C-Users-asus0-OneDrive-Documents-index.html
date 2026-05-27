@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Générateur de Template - Suivi Immobilier</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 { color: #1a3c5e; font-size: 22px; margin-bottom: 8px; }
+    p  { color: #555; font-size: 14px; line-height: 1.6; margin-bottom: 24px; }
+    .sheets-list {
+      text-align: left;
+      background: #f8fafc;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 28px;
+    }
+    .sheets-list li { color: #334155; font-size: 13px; margin: 6px 0; }
+    button {
+      background: #1a3c5e;
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover { background: #2563a8; }
+    .note { font-size: 12px; color: #888; margin-top: 16px; }
+  </style>
+</head>
+<body>
+<div class="card">
+  <h1>📋 Template Suivi Immobilier Locatif</h1>
+  <p>Cliquez sur le bouton ci-dessous pour télécharger votre fichier Excel pré-rempli avec les colonnes à compléter.</p>
+  <div class="sheets-list">
+    <strong style="color:#1a3c5e;">Le fichier contient 4 onglets :</strong>
+    <ul>
+      <li>🏠 <strong>Biens</strong> — liste de vos propriétés</li>
+      <li>👤 <strong>Locataires</strong> — informations sur les locataires et les baux</li>
+      <li>🏢 <strong>Syndic</strong> — frais de syndic par bien</li>
+      <li>💶 <strong>Encaissements</strong> — suivi mensuel des loyers perçus</li>
+    </ul>
+  </div>
+  <button onclick="genererTemplate()">⬇ Télécharger le template Excel</button>
+  <p class="note">Remplissez chaque onglet, puis transmettez-le pour que le Dashboard soit configuré avec vos données.</p>
+</div>
+
+<script>
+function genererTemplate() {
+  const wb = XLSX.utils.book_new();
+
+  // ── Onglet 1 : Biens ──────────────────────────────────────────────
+  const biens = [
+    ["ID_Bien", "Nom du bien", "Type de bien", "Adresse complète", "Ville", "Code postal", "Propriétaire (Vous / Prénom famille)"],
+    ["B001", "Exemple : Apt Lyon Centre", "Appartement", "12 rue des Fleurs", "Lyon", "69001", "Vous"],
+    ["B002", "", "Appartement / Maison / Local commercial", "", "", "", ""],
+  ];
+  const wsBiens = XLSX.utils.aoa_to_sheet(biens);
+  wsBiens["!cols"] = [8,22,22,28,16,12,28].map(w => ({wch: w}));
+  XLSX.utils.book_append_sheet(wb, wsBiens, "🏠 Biens");
+
+  // ── Onglet 2 : Locataires ─────────────────────────────────────────
+  const locataires = [
+    [
+      "ID_Bien", "Nom locataire", "Prénom locataire",
+      "Date début bail (JJ/MM/AAAA)", "Loyer mensuel HC (€)", "Charges mensuelles (€)",
+      "Jour d'échéance du loyer", "Indice de référence (IRL / ILC)",
+      "Valeur indice à la signature", "Date dernière révision (JJ/MM/AAAA)"
+    ],
+    ["B001", "Dupont", "Marie", "01/03/2022", "750", "80", "5", "IRL", "137,96", "01/03/2025"],
+    ["B002", "", "", "", "", "", "1 à 31", "IRL ou ILC", "", ""],
+  ];
+  const wsLoc = XLSX.utils.aoa_to_sheet(locataires);
+  wsLoc["!cols"] = [8,16,16,26,22,22,24,26,22,26].map(w => ({wch: w}));
+  XLSX.utils.book_append_sheet(wb, wsLoc, "👤 Locataires");
+
+  // ── Onglet 3 : Syndic ─────────────────────────────────────────────
+  const syndic = [
+    [
+      "ID_Bien", "Nom du bien", "Montant (€)",
+      "Fréquence (Mensuel / Trimestriel / Annuel)",
+      "À charge de (Propriétaire / Locataire)",
+      "Date du prochain appel de fonds", "Commentaire"
+    ],
+    ["B001", "Apt Lyon Centre", "120", "Trimestriel", "Propriétaire", "01/07/2026", ""],
+    ["B002", "", "", "Mensuel / Trimestriel / Annuel", "Propriétaire ou Locataire", "", ""],
+  ];
+  const wsSyndic = XLSX.utils.aoa_to_sheet(syndic);
+  wsSyndic["!cols"] = [8,22,12,34,30,26,24].map(w => ({wch: w}));
+  XLSX.utils.book_append_sheet(wb, wsSyndic, "🏢 Syndic");
+
+  // ── Onglet 4 : Encaissements ──────────────────────────────────────
+  const encaissements = [
+    [
+      "Mois (MM/AAAA)", "ID_Bien", "Nom du bien", "Nom locataire",
+      "Loyer attendu HC (€)", "Charges attendues (€)", "Total attendu (€)",
+      "Montant reçu (€)", "Date de réception (JJ/MM/AAAA)",
+      "Statut (Payé / Partiel / Impayé)", "Commentaire"
+    ],
+    ["05/2026", "B001", "Apt Lyon Centre", "Dupont Marie", "750", "80", "830", "830", "03/05/2026", "Payé", ""],
+    ["05/2026", "B002", "", "", "", "", "", "", "", "Payé / Partiel / Impayé", ""],
+  ];
+  const wsEnc = XLSX.utils.aoa_to_sheet(encaissements);
+  wsEnc["!cols"] = [16,8,22,20,20,20,18,16,26,28,24].map(w => ({wch: w}));
+  XLSX.utils.book_append_sheet(wb, wsEnc, "💶 Encaissements");
+
+  // ── Téléchargement ────────────────────────────────────────────────
+  XLSX.writeFile(wb, "template-suivi-immobilier.xlsx");
+}
+</script>
+</body>
+</html>
